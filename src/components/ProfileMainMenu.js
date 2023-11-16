@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { injectIntl } from "react-intl";
 import { AccountCircle, Fingerprint, InsertEmoticon } from "@material-ui/icons";
+import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
+import VpnKeyIcon from '@material-ui/icons/VpnKey';
 import {
   formatMessage,
   MainMenuContribution,
@@ -14,12 +16,12 @@ class ProfileMainMenu extends Component {
     let entries = [
       {
         text: formatMessage(this.props.intl, "profile", "menu.myProfile"),
-        icon: <InsertEmoticon />,
+        icon: <AssignmentIndIcon />,
         route: "/profile/myProfile",
       },
       {
         text: formatMessage(this.props.intl, "profile", "menu.changePassword"),
-        icon: <Fingerprint />,
+        icon: <VpnKeyIcon />,
         route: "/profile/changePassword",
       },
     ];
